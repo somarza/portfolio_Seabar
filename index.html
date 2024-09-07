@@ -4,48 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seabar Omarzadeh Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Header Section -->
+    <!-- Header Section with Photo -->
     <header>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <h1>Seabar Omarzadeh</h1>
-        <p>Software Engineering Student | Web Developer | AI Enthusiast</p>
+        <div class="intro">
+            <img src="your-photo.jpg" alt="Seabar Omarzadeh" class="profile-pic">
+            <h1>Seabar Omarzadeh</h1>
+            <p>Third-year Software Engineering Student passionate about coding and building real-world solutions.</p>
+        </div>
     </header>
 
     <!-- About Section -->
     <section id="about">
         <h2>About Me</h2>
-        <p>Hello! I'm Seabar, a third-year Software Engineering student at Western University, passionate about building innovative solutions and applying my skills in real-life scenarios.</p>
+        <p>Hi, I’m Seabar! I’m currently in my third year of Software Engineering at Western University. I love tackling real-world problems and bringing creative solutions to life through coding. Whether it’s a project or a hackathon, I’m always excited to learn new things and take my skills to the next level.</p>
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
         <h2>Projects</h2>
-        <div class="project">
-            <h3>ScotiaGlobe - Fraud Prevention</h3>
-            <p>Developed during the Scotiabank x Tangerine Hackathon. Focused on preventing fraud in international e-transfers.</p>
-        </div>
-        <!-- Add more project entries here -->
-    </section>
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project">
+                <img src="unityGame.jpg" alt="Unity Game Development screenshot">
+                <h3>Unity Game Development</h3>
+                <p>Collaborated with a team to develop a 3-level Unity game, utilizing C# for programming and GitHub for version control.</p>
+                <p><strong>Languages Used:</strong> C#, Unity</p>
+                <a href="https://github.com/amelpiat/Project" target="_blank">View Project</a>
+            </div>
+            
 
-    <!-- Experience Section -->
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="experience">
-            <h3>Summer Student III - Western University</h3>
-            <p>Worked in the Faculty of Engineering, supporting student engagement and course facilitation.</p>
+            <!-- Project 2 -->
+            <div class="project">
+                <img src="scotiaGlobe.jpg" alt="ScotiaGlobe project screenshot">
+                <h3>ScotiaGlobe - Fraud Prevention</h3>
+                <p>Developed during the Scotiabank x Tangerine Hackathon. Focused on preventing fraud in international e-transfers.</p>
+                <p><strong>Languages Used:</strong> JavaScript, Node.js</p>
+                <a href="ScotiaGlobe Presentation.pdf" target="_blank">View Project</a>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project">
+                <img src="sortingAlgorithms.jpg" alt="Sorting Algorithms project screenshot">
+                <h3>Sorting Algorithms Efficiency Project</h3>
+                <p>Implemented six sorting algorithms in Java to assess their performance on a dataset of 50,000 random numbers. Quick Sort was identified as the most efficient for large datasets.</p>
+                <p><strong>Languages Used:</strong> Java</p>
+                <a href="https://github.com/somarza/Comparing-Sorting-Algorithms" target="_blank">View Project</a>
+            </div>
         </div>
-        <!-- Add more experience entries here -->
     </section>
 
     <!-- Contact Section -->
