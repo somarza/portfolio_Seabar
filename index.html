@@ -21,14 +21,51 @@
         <div class="intro">
             <img src="your-photo.jpg" alt="Seabar Omarzadeh" class="profile-pic">
             <h1>Seabar Omarzadeh</h1>
-            <p>Third-year Software Engineering Student passionate about coding and building real-world solutions.</p>
+            <p>Third-year Software Engineering Student passionate about coding and interested in building real-world solutions.</p>
         </div>
     </header>
 
-    <!-- About Section -->
     <section id="about">
         <h2>About Me</h2>
-        <p>Hi, I’m Seabar! I’m currently in my third year of Software Engineering at Western University. I love tackling real-world problems and bringing creative solutions to life through coding. Whether it’s a project or a hackathon, I’m always excited to learn new things and take my skills to the next level.</p>
+        <p>Hi, I’m Seabar! I’m a third-year Software Engineering student at Western University with a strong foundation in Java and JavaScript, and I’ve recently enjoyed learning Python, focusing on AI’s impact. I love solving real-world problems through coding and developing creative solutions.
+            Through my involvement in sports, clubs, and engineering competitions, along with my role at the Engineering Undergraduate Services office, I’ve developed key soft skills like discipline, teamwork, and communication. I’m excited to contribute to the tech industry through internships and mentorships. Feel free to reach out if you'd like to collaborate or discuss opportunities to make a difference.</p>
+            
+        <h3>                            </h3>
+        <div class="skills-icons">
+            <div class="skill">
+                <img src="csharp-logo.png" alt="C#" title="C#">
+                <p>C#</p>
+            </div>
+            <div class="skill">
+                <img src="java-logo.png" alt="Java" title="Java">
+                <p>Java</p>
+            </div>
+            <div class="skill">
+                <img src="javascript-logo.png" alt="JavaScript" title="JavaScript">
+                <p>JavaScript</p>
+            </div>
+            <div class="skill">
+                <img src="nodejs-logo.png" alt="Node.js" title="Node.js">
+                <p>Node.js</p>
+            </div>
+            <div class="skill">
+                <img src="unity-logo.png" alt="Unity" title="Unity">
+                <p>Unity</p>
+            </div>
+            <div class="skill">
+                <img src="git-logo.png" alt="Git" title="Git">
+                <p>Git</p>
+            </div>
+            <div class="skill">
+                <img src="html-logo.png" alt="HTML" title="HTML">
+                <p>HTML</p>
+            </div>
+            <div class="skill">
+                <img src="css-logo.png" alt="CSS" title="CSS">
+                <p>CSS</p>
+            </div>
+        </div>
+        
     </section>
 
     <!-- Projects Section -->
@@ -40,7 +77,7 @@
                 <img src="unityGame.jpg" alt="Unity Game Development screenshot">
                 <h3>Unity Game Development</h3>
                 <p>Collaborated with a team to develop a 3-level Unity game, utilizing C# for programming and GitHub for version control.</p>
-                <p><strong>Languages Used:</strong> C#, Unity</p>
+                <p><strong>Used:</strong> C#, Unity, Github</p>
                 <a href="https://github.com/amelpiat/Project" target="_blank">View Project</a>
             </div>
             
@@ -50,8 +87,8 @@
                 <img src="scotiaGlobe.jpg" alt="ScotiaGlobe project screenshot">
                 <h3>ScotiaGlobe - Fraud Prevention</h3>
                 <p>Developed during the Scotiabank x Tangerine Hackathon. Focused on preventing fraud in international e-transfers.</p>
-                <p><strong>Languages Used:</strong> JavaScript, Node.js</p>
-                <a href="ScotiaGlobe Presentation.pdf" target="_blank">View Project</a>
+                <p><strong>Used:</strong> Figma, Powerpoint, Canva</p>
+                <a href="ScotiaGlobe_Presentation.pdf" target="_blank">View Project</a>
             </div>
 
             <!-- Project 3 -->
@@ -59,7 +96,7 @@
                 <img src="sortingAlgorithms.jpg" alt="Sorting Algorithms project screenshot">
                 <h3>Sorting Algorithms Efficiency Project</h3>
                 <p>Implemented six sorting algorithms in Java to assess their performance on a dataset of 50,000 random numbers. Quick Sort was identified as the most efficient for large datasets.</p>
-                <p><strong>Languages Used:</strong> Java</p>
+                <p><strong>Used:</strong> Java, Intellij</p>
                 <a href="https://github.com/somarza/Comparing-Sorting-Algorithms" target="_blank">View Project</a>
             </div>
         </div>
@@ -68,18 +105,49 @@
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Me</h2>
+        <!-- Contact Form -->
         <form id="contact-form">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
-
+        
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
-
+        
             <label for="message">Message:</label>
             <textarea id="message" name="message" rows="4" required></textarea>
-
+        
             <button type="submit">Send Message</button>
         </form>
+        <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+        <script type="text/javascript">
+           // Initialize EmailJS with your User ID
+           emailjs.init("3Lb7oAc7quBzqw7rt"); // Replace with your actual User ID
+        
+           document.getElementById('contact-form').addEventListener('submit', function(event) {
+              event.preventDefault(); // Prevent default form submission behavior
+        
+              // Send form data using EmailJS
+              emailjs.sendForm('service_eguszal', 'template_gn6cm1t', this)
+                 .then(function() {
+                     alert('Your message has been sent successfully!');
+                 }, function(error) {
+                     console.log('FAILED...', error); // Log error details to console
+                     alert('Failed to send the message. Please try again later.');
+                 });
+           });
+        </script>
+        
+
+
+         <!-- Social Icons -->
+    <div class="social-icons">
+        <a href="https://github.com/somarza" target="_blank">
+            <img src="github-logo.png" alt="GitHub" title="GitHub">
+        </a>
+        <a href="https://www.linkedin.com/in/seabar-omarzadeh" target="_blank">
+            <img src="linkedin-icon.png" alt="LinkedIn" title="LinkedIn">
+        </a>
+    </div>
     </section>
 
     <footer>
